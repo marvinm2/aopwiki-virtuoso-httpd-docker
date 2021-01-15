@@ -22,7 +22,7 @@ COPY --from=apache /usr/local/bin/httpd-foreground /usr/local/bin/httpd-foregrou
 RUN apt-get update
 RUN apt-get -y install git
 
-RUN rm -rf /usr/local/apache2/htdocs/ && git clone https://github.com/marvinm2/snorql-extended.git /usr/local/apache2/htdocs/
+RUN rm -rf /usr/local/apache2/htdocs/ && git clone https://github.com/marvinm2/aopwiki-snorql-extended.git /usr/local/apache2/htdocs/
 
 COPY ./script.sh /script.sh
 
